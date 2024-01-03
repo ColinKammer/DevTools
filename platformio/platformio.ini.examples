@@ -1,0 +1,12 @@
+
+
+;ESP8622 
+; - with C++20 
+; - and a working filesystem
+[env:esp12e]
+platform = espressif8266
+board = esp12e
+framework = arduino
+board_build.filesystem = littlefs
+build_unflags = -std=gnu++17
+build_flags = -std=gnu++20
